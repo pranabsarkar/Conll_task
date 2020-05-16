@@ -1,13 +1,14 @@
 # **CoNLL-2003 Tagging Task**
 In this Repository you will find 3 models different models trained on the English CoNLL-2003 dataset, which can tag the sentences into their respective POS tags, Syntactic chunk tags, and NER tags.
 
+![](images/ner.gif)
 
 **Data Description**
 
 The CoNLL-2003 shared task data files contain four columns separated by a **single space**. Each word has been put on a separate line and there is an empty line after each sentence. The first item on each line is a word, the second a **part-of-speech (POS) tag**, the third a **syntactic chunk tag**, and the fourth the **named entity tag**.
 
 
-![](images/ner.gif)
+
 
 <>
 
