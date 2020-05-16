@@ -1,0 +1,10 @@
+Hi, this folder is now empty!
+
+To use the model you have to use train.py file to generate the .pkl files in this directory.
+
+OR,
+
+Download the .pkl files from this 
+drive link: https://drive.google.com/drive/folders/1dZQjwpGlB7dr4cB_dBqjzxMTFZsYZPlz
+
+
