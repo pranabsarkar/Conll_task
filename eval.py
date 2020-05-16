@@ -57,7 +57,7 @@ def PAR_EVAL():
         MAX_LEN = pickle.load(f)    
 
     # FOR THE POS MODEL
-    PATH1A="models/PARv1.h5"
+    PATH1A="checkpoints/model_PAR.h5"
     
     find_metrics(X_teste, y_teste,PATH1A,all_words,all_tags)
 
@@ -74,7 +74,7 @@ def NER_EVAL():
         MAX_LEN = pickle.load(f)      
 
     # FOR THE POS MODEL
-    PATH1A="models/NERv1.h5"
+    PATH1A="checkpoints/model_NER.h5"
     
     find_metrics(X_teste, y_teste,PATH1A,all_words,all_tags)
 
