@@ -15,8 +15,8 @@ Here, from the above we can see the structure of our dataset. Let, take the exam
 
 There, are 3 files using which we can train, validate and test our model-
 
- - eng.testa – Dataset for validating the 
- - model. eng.testb – Dataset for testing the model. 
+ - eng.testa – Dataset for validating the model.
+ - eng.testb – Dataset for testing the model. 
  - eng.train – Dataset for training the model.
 
 
