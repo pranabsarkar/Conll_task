@@ -180,7 +180,7 @@ F1:  0.785053256504278
 
 * During text processing we can convert all the words into lowercase.
 
-* If there is more training data the model can perform better after the training.
+* If there are more training data the model can perform better.
 
 * We can fine-tune the hyper-parameters of our model to enhance the performance of our model.
 
