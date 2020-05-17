@@ -24,6 +24,7 @@ from seqeval.metrics import (precision_score,
 
 import gc
 
+# Plotting the results.
 def plot(history, arr):
     FONTS = 18
     fig, ax = plt.subplots(1, 2, figsize=(20, 8))
@@ -37,7 +38,7 @@ def plot(history, arr):
         ax[idx].set_xlabel('Epoch ',fontsize=FONTS)
         ax[idx].set_ylabel('Metric',fontsize=FONTS)
         ax[idx].set_title(arr[idx][0] + ' X ' + arr[idx][1],fontsize=FONTS)
-        
+# Function to find out the evaluation metrics.
 def metrics(pred_tag, true_tag):
 
     print(classification_report(pred_tag, true_tag))
@@ -45,7 +46,7 @@ def metrics(pred_tag, true_tag):
     print("Precision: \t", precision_score(pred_tag, true_tag))
     print("Recall: \t", recall_score(pred_tag, true_tag))
     print("F1: \t\t", f1_score(pred_tag, true_tag))
-
+# Function to return the unique list of words and tags.
 def build_uniques(arr_x, arr_y):
     
     tmp_x, tmp_y = [], []
@@ -59,7 +60,7 @@ def build_uniques(arr_x, arr_y):
             tmp_y.append(x)
     return list(set(tmp_x)), list(set(tmp_y))
 
-## Helper Functions
+## Function for word to index.
 def word2idx(all_words): 
 
     tmp = {value: idx + 2 for idx, value in enumerate(all_words)}
@@ -67,24 +68,24 @@ def word2idx(all_words):
     tmp["PAD"] = 0
     
     return tmp
-
+# Function for tag to index.
 def tag2idx(all_tags):
     
     tmp = {value: idx + 1 for idx, value in enumerate(all_tags)}
     tmp["PAD"] = 0 
     
     return tmp
-
+# Function for index to word.
 def idx2word(word2idx):
     
     return {idx: value for value, idx in word2idx.items()}
-
+# Function for index to tag.
 def idx2tag(tag2idx):
     
     return {idx: value for value, idx in tag2idx.items()}
 
 
-
+# Function used to convert the list of words and tags into a model friendly format.
 def parser_arrays(MAX_LEN,x_train, y_train, all_words, all_tags):
     
     obj_word2idx = word2idx(all_words)
@@ -99,6 +100,7 @@ def parser_arrays(MAX_LEN,x_train, y_train, all_words, all_tags):
     
     return  X_pad, np.array([to_categorical(idx, num_classes=len(all_tags) + 1) for idx in y_pad])
 
+# Function used during inference for returning the predicted tag with the original tag.  
 def parser2categorical(pred, y_true, all_tags):
     
     k = tag2idx(all_tags)
@@ -108,28 +110,3 @@ def parser2categorical(pred, y_true, all_tags):
     y_true_tag = [[parser_idx[idx] for idx in row] for row in y_true] 
     
     return pred_tag, y_true_tag
-def build_matrix(path, ALLWORDS, DIM):
-    
-    embeddings_index = {}
-    
-    with open(path) as f:
-        for line in f:
-            word, coefs = line.split(maxsplit=1)
-            coefs = np.fromstring(coefs, 'f', sep=' ')
-            embeddings_index[word] = coefs
-
-    embedding_matrix = np.zeros((NUM_WORDS, DIM))
-    for word, i in ALLWORDS.items():
-        if i >= NUM_WORDS:  
-            continue
-        try:
-            embedding_vector = embeddings_index.get(word)
-            if embedding_vector is not None: 
-                embedding_matrix[i] = embedding_vector
-        except:
-            embedding_matrix[i] = embeddings_index.get('UNK')
-            
-    del embeddings_index
-    gc.collect()
-    
-    return embedding_matrix
