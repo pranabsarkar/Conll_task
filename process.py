@@ -1,3 +1,4 @@
+# This function is used for loading the data and converting the same into a structured datastucture, other than splitting here I am removing the special charecters specially.
 def load_data_and_labels_one(filename,encoding='utf-8'):
     words=[]
     pos=[]    
@@ -20,6 +21,7 @@ def load_data_and_labels_one(filename,encoding='utf-8'):
                     words,pos= [], []
 
     return sent, label1
+# This function also works same like the previous one but here I am not removing the special charecters.
 def load_data_and_labels_two(filename,encoding='utf-8'):
     words=[]
     parser=[]
