@@ -90,8 +90,7 @@ Conll_task/
     model inference and evaluation.
     
    4. Then, I have defined the model architecture inside the **models.py**
-    file which has an embedding, BiLSTM and a Time Distributed Dense
-    Layer.
+    file.
     
    5. After defining the model, its time for compiling and fitting the
     model with the required parameters as well as the training and
