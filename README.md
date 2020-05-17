@@ -81,7 +81,7 @@ Conll_task/
     model. There are sentences with different lengths, thus we can’t
     just pass the vectors of different lengths to our model. As we know
     the max length of the sentence, so we have to pad all the
-    sentences according to the max length of the sentences. After
+    sentences according to the max length. After
     encoding and padding the sentences using the **utils.py** file we
     have to save those processed lists of X_train, X_test, X_valid,
     y_train, y_test, and y_valid in pickle files as well as the lists of
