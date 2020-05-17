@@ -3,7 +3,7 @@ from utils import *
 import pickle
 from process import *
 
-
+# This function is used to print the Performance Metrics using the Testing Data
 def find_metrics(X_teste, y_teste,model_path1,all_words,all_tags):
     # load model
     
@@ -15,7 +15,7 @@ def find_metrics(X_teste, y_teste,model_path1,all_words,all_tags):
     pred_tag, true_tag = parser2categorical(preds, y_true, all_tags) 
     print(metrics(pred_tag, true_tag))
     
-
+# This Function is for loading the pickle files of the POS Model's embedded files and some variables.
 def POS_EVAL():
     with open('encoding/X_teste_POS.pkl', 'rb') as f:
         X_teste = pickle.load(f)
@@ -30,7 +30,7 @@ def POS_EVAL():
     # FOR THE POS MODEL
     PATH1A="checkpoints/model_POS.h5"
     find_metrics(X_teste, y_teste,PATH1A,all_words,all_tags)
-
+# This Function is for loading the pickle files of the Syntactic Chunk Model's embedded files and some variables.
 def PAR_EVAL():
     with open('encoding/X_teste_PAR.pkl', 'rb') as f:
         X_teste = pickle.load(f)
@@ -47,7 +47,7 @@ def PAR_EVAL():
     PATH1A="checkpoints/model_PAR.h5"
     
     find_metrics(X_teste, y_teste,PATH1A,all_words,all_tags)
-
+# This Function is for loading the pickle files of the NER Model's embedded files and some variables.
 def NER_EVAL():
     with open('encoding/X_teste_NER.pkl', 'rb') as f:
         X_teste = pickle.load(f)
