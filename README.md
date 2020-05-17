@@ -1,5 +1,5 @@
 # **CoNLL-2003 Tagging Task**
-In this Repository you will find 3 models different models trained on the English CoNLL-2003 dataset, which can tag the sentences into their respective POS tags, Syntactic chunk tags, and NER tags.
+In this Repository you will find 3 different models trained on the English CoNLL-2003 dataset, which can tag the sentences into their respective POS tags, Syntactic chunk tags, and NER tags.
 
 ![](images/ner.gif)
 
