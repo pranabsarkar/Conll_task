@@ -142,7 +142,7 @@ I have used my local system for training these deep learning models.
 
 CPU: Intel® Core™ i5-8265U @ 1.60 GHz 1.80 GHz; RAM: 8 GB
 
-For training, we have to use the following command-
+For training, I have to use the following command-
 
 `python train.py`
 
