@@ -5,7 +5,7 @@ In this Repository you will find 3 different models trained on the English CoNLL
 
 ## **Data Description**
 
-The CoNLL-2003 shared task data files contain four columns separated by a **single space**. Each word has been put on a separate line and there is an empty line after each sentence. The first item on each line is a word, the second a **part-of-speech (POS) tag**, the third a **syntactic chunk tag**, and the fourth the **named entity tag**.
+The English CoNLL-2003 shared task data files which were present in the provided link contains four columns separated by a **single space**. Each word has been put on a separate line and there is an empty line after each sentence. The first item on each line is a word, the second a **part-of-speech (POS) tag**, the third a **syntactic chunk tag**, and the fourth the **named entity tag**.
 
 ![](images/dataset.jpg)
 
