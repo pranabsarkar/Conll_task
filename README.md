@@ -113,7 +113,7 @@ Model Summary:
 
 -   I have used an **embedding layer** that computes a word vector model for our words.
 -   Then I have added Dropout to avoid overfitting.
--   Then an **LSTM layer** with a `Bidirectional` modifier. **bidirectional modifier** inputs to the **LSTM** the next values in the sequence, not just the previous.
+-   Then an **LSTM layer** with a `Bidirectional` modifier.
 -   I have set the `return_sequences=True` parameter so that the LSTM outputs a sequence, not only the final value as well as added `recurrent_dropout=0.1`.
 -   After the LSTM Layer we there is a **Dense Layer** (or fully-connected layer) that picks the appropriate tag. Since this dense layer needs to run on each element of the sequence, we need to add the `TimeDistributed` modifier.
 -   In the last layer I have used Softmax function.
