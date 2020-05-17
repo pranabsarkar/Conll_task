@@ -18,6 +18,7 @@ from keras.layers import (LSTM,
                           Dropout,Conv1D,
                           Bidirectional,Input,Activation)
 
+# Here I am just defining the model architecture and compiling the model.
 def simple_model(NUM_WORDS,MAX_LEN,NUM_TAGS):
     model = Sequential()
     model.add(Embedding(input_dim=NUM_WORDS, output_dim=MAX_LEN,input_length=MAX_LEN))
