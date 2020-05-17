@@ -3,7 +3,7 @@ In this Repository you will find 3 models different models trained on the Englis
 
 ![](images/ner.gif)
 
-##**Data Description**
+## **Data Description**
 
 The CoNLL-2003 shared task data files contain four columns separated by a **single space**. Each word has been put on a separate line and there is an empty line after each sentence. The first item on each line is a word, the second a **part-of-speech (POS) tag**, the third a **syntactic chunk tag**, and the fourth the **named entity tag**.
 
@@ -22,7 +22,7 @@ There, are 3 files using which we can train, validate and test our model.
 
 **eng.train** – Dataset for training the model. 
 
-##**File Structure**
+## **File Structure**
 
 ```
 Conll_task/
@@ -64,7 +64,7 @@ Conll_task/
 │  ├── eng.testb
 │  ├── eng.train
 ```
-##**Approach**
+## **Approach**
 
    1. Going through the dataset and figure out how to create a structured
      data structure for our model.
@@ -103,7 +103,7 @@ Conll_task/
    7. Now we can evaluate the model using the function present of the
     **eval.py** file inside a jupyter-notebook for a proper understanding of the model’s performance.
 
-##**Model Architecture**
+## **Model Architecture**
 
 I have created 3 different models for the different tasks thus I have used a simple deep learning model architecture to train the models.
 
@@ -120,7 +120,7 @@ Model Summary:
 -   During compiling the model I have used `optimizer='adam', loss='categorical_crossentropy'` and `metrics=['accuracy']`.
 -   I have used `save_best_only=True` to save the best model updates in the .h5 file.
 
-##**Installation**
+## **Installation**
 
 To run this code in your local system you have to download this repository using-
 
@@ -130,13 +130,13 @@ Now open the downloaded directory and install the required python packages using
 
 `pip install -r requirements.txt`
 
-##**Usage**
+## **Usage**
 
 For a quick evaluation of the models, I have uploaded my model and encodings. You can download it using this link: [https://drive.google.com/drive/folders/1dZQjwpGlB7dr4cB_dBqjzxMTFZsYZPlz?usp=sharing](https://drive.google.com/drive/folders/1dZQjwpGlB7dr4cB_dBqjzxMTFZsYZPlz?usp=sharing)
 
 ** _We have to place the downloaded files in a correct orientation according to the given File Structure Graph in the above._
 
-##**Training and Evaluation**
+## **Training and Evaluation**
 
 I have used my local system for training these deep learning models.
 
@@ -174,7 +174,7 @@ Recall:  0.8345501794332385
 
 F1:  0.785053256504278
 
-##**Further Modification’s:**
+## **Further Modification’s:**
 
 * We can use pre-trained word embedding’s like **GloVe** for better results.
 
@@ -186,7 +186,7 @@ F1:  0.785053256504278
 
 * We could have used different model architectures and compare the performances.
 
-##**References**
+## **References**
 
 * Introduction to the CoNLL-2003 Shared Task: Language-Independent Named Entity Recognition. Link: [https://www.aclweb.org/anthology/W03-0419.pdf](https://www.aclweb.org/anthology/W03-0419.pdf)
 
@@ -196,4 +196,4 @@ F1:  0.785053256504278
 
 * https://www.deeplearning.ai/
 
-##**Thank You**
+## **Thank You**
