@@ -105,8 +105,7 @@ Conll_task/
 
 ## **Model Architecture**
 
-I have created 3 different models for the different tasks thus I have used a simple deep learning model architecture to train the models.
-
+I have created 3 different models for the different tasks thus I have used a simple deep learning model architecture to train the models. We can find the model's architecture inside the `models.py` file.
 Model Summary:
 
 
