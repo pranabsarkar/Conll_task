@@ -66,16 +66,15 @@ Conll_task/
 ```
 **Approach**
 
- 1. Going through the dataset and figure out how to create a structured
-    data structure for our model.
+   1. Going through the dataset and figure out how to create a structured
+     data structure for our model.
     
    2. Extracting the X and Y labels for our training, validation, and
     testing from the provided datasets using **process.py** file. I have
     used two types of data extraction functions for the models. The
-    **load_data_and_labels_one** function is used to model the data for our POS tagger deep learning model and **load_data_and_labels_two**
-    is used for the Syntactic chunk, NER models.
+    **load_data_and_labels_one** function is used to model the data for our POS tagger deep learning model and   **load_data_and_labels_two** is used for the Syntactic chunk, NER models.
     
-    3. As we know that the deep learning models didn’t understand text or
+   3. As we know that the deep learning models didn’t understand text or
     image data, they only understand numbers. Thus, I have created a
     word and tags vocabulary using the entire dataset as well as the
     maximum length of a sentence to pass a fixed-length vector to our
@@ -90,18 +89,18 @@ Conll_task/
     are saved inside the encoding directory for the future usage during
     model inference and evaluation.
     
-    4. Then, I have defined the model architecture inside the **models.py**
+   4. Then, I have defined the model architecture inside the **models.py**
     file which has an embedding, BiLSTM and a Time Distributed Dense
     Layer.
     
-    5. After defining the model, its time for compiling and fitting the
+   5. After defining the model, its time for compiling and fitting the
     model with the required parameters as well as the training and
     validation data.
     
-    6. Once the training is done using the **train.py** file the 3
+   6. Once the training is done using the **train.py** file the 3
     different models are saved inside the checkpoints directory.
     
-    7. Now we can evaluate the model using the function present of the
+   7. Now we can evaluate the model using the function present of the
     **eval.py** file inside a jupyter-notebook for a proper understanding of the model’s performance.
 
 **Model Architecture**
