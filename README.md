@@ -9,7 +9,7 @@ The CoNLL-2003 shared task data files contain four columns separated by a **sing
 
 ![](images/dataset.jpg)
 
-Here, from the above we can see the structure of our dataset. Let, take the example of Sample 1 from where I have used Cricket as the Word, NNP as the POS tag, I-NP as the syntactic chunk tag, and O as the NER tag. In this way same to the Sample 1 I have modeled the entire training, validation, and testing dataset.
+Here, from the above we can see the structure of our dataset. Let, take the example of Sample 1 from where I have used Cricket as the Word, NNP as the POS tag, I-NP as the syntactic chunk tag, and O as the NER tag. In this way same like the Sample 1 I have modeled the entire training, validation, and testing dataset.
 
 There, are 3 files using which we can train, validate and test our model-
 
