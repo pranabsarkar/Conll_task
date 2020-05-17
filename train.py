@@ -18,6 +18,8 @@ from keras.layers import (LSTM,
 from process import load_data_and_labels_one,load_data_and_labels_two
 from utils import *
 import pickle
+
+# Here I am loading the raw datasets, after converting saving into a meaningfull format which can be used by our model during the training.
 def POS():
 
     X_train, y_train = load_data_and_labels_one("conll-2003/eng.train")
@@ -58,6 +60,7 @@ def POS():
 
     print("Saved model to disk")
 
+# Here I am loading the raw datasets, after converting saving into a meaningfull format which can be used by our model during the training.
 def PAR():
 
     X_train1, y_train1, y_train2 = load_data_and_labels_two("conll-2003/eng.train")
@@ -99,7 +102,7 @@ def PAR():
 
     print("Saved model to disk")
     
-
+# Here I am loading the raw datasets, after converting saving into a meaningfull format which can be used by our model during the training.
 def NER():
 
     X_train1, y_train1, y_train2 = load_data_and_labels_two("conll-2003/eng.train")
