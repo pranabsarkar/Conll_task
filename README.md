@@ -133,7 +133,7 @@ Now open the downloaded directory and install the required python packages using
 
 ## **Usage**
 
-For a quick evaluation of the models, I have uploaded my model and encodings. You can download it using this link: [https://drive.google.com/drive/folders/1dZQjwpGlB7dr4cB_dBqjzxMTFZsYZPlz?usp=sharing](https://drive.google.com/drive/folders/1dZQjwpGlB7dr4cB_dBqjzxMTFZsYZPlz?usp=sharing)
+For a quick evaluation of the models, I have uploaded my models and encodings. You can download it using this link: [https://drive.google.com/drive/folders/1dZQjwpGlB7dr4cB_dBqjzxMTFZsYZPlz?usp=sharing](https://drive.google.com/drive/folders/1dZQjwpGlB7dr4cB_dBqjzxMTFZsYZPlz?usp=sharing)
 
 ** _We have to place the downloaded files in a correct orientation according to the given File Structure Graph in the above._
 
