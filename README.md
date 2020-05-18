@@ -185,8 +185,7 @@ F1:  0.785053256504278
 * We can fine-tune the hyper-parameters of our model to enhance the performance of our model.
 
 * We could have used different model architectures and compare the performances.
-
-* We could have modified the padding size of the sentences by taking the average size which can improve the data quality, as there are many empty spaces. 
+ 
 
 ## **References**
 
