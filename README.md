@@ -186,6 +186,8 @@ F1:  0.785053256504278
 
 * We could have used different model architectures and compare the performances.
 
+* We could have modified the padding size of the sentences by taking the average size which can imporove the data quality, as there are many empty spaces. 
+
 ## **References**
 
 * Introduction to the CoNLL-2003 Shared Task: Language-Independent Named Entity Recognition. Link: [https://www.aclweb.org/anthology/W03-0419.pdf](https://www.aclweb.org/anthology/W03-0419.pdf)
