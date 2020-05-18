@@ -186,7 +186,7 @@ F1:  0.785053256504278
 
 * We could have used different model architectures and compare the performances.
 
-* We could have modified the padding size of the sentences by taking the average size which can imporove the data quality, as there are many empty spaces. 
+* We could have modified the padding size of the sentences by taking the average size which can improve the data quality, as there are many empty spaces. 
 
 ## **References**
 
