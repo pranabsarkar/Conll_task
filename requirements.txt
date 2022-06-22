@@ -1,5 +1,5 @@
 tqdm==4.46.0
-numpy==1.18.4
+numpy==1.22.0
 scipy==1.4.1
 seqeval==0.0.12
 pandas==0.24.2
